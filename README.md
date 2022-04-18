@@ -4,8 +4,6 @@ This repository contains the coursework assignment I completed for module Big Da
 ## Ethereum data
 The four datasets used for the coursework was stored in an Hadoop Distributed File System (HDFS) cluster at university and only spanned from August 2015 to June 2019. Below I have included the details of each dataset.
 
-### Blocks 
-
 DATASET SCHEMA - BLOCKS
 - number: The block number
 - hash: Hash of the block
