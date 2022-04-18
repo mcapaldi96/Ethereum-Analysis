@@ -1,4 +1,4 @@
-The tabulated results show the top ten addresses who the most Wei (smallest denomination of Ethereum) for their popular smart contracts.
+The tabulated results show the top ten addresses who recieved the most Wei (smallest denomination of Ethereum) for their popular smart contracts.
 
 | Address                                    | Total Value          |
 | -------------------------------------------|:--------------------:|
