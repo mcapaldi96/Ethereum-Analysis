@@ -7,20 +7,40 @@ The four datasets used for the coursework was stored in an Hadoop Distributed Fi
 ### Blocks 
 
 DATASET SCHEMA - BLOCKS
+- number: The block number
+- hash: Hash of the block
+- miner: The address of the beneficiary to whom the mining rewards were given
+- difficulty: Integer of the difficulty for this block
+- size: The size of this block in bytes
+- gas_limit: The maximum gas allowed in this block
+- gas_used: The total used gas by all transactions in this block
+- timestamp: The timestamp for when the block was collated
+- transaction_count: The number of transactions in the block
 
-number: The block number
-hash: Hash of the block
-miner: The address of the beneficiary to whom the mining rewards were given
-difficulty: Integer of the difficulty for this block
-size: The size of this block in bytes
-gas_limit: The maximum gas allowed in this block
-gas_used: The total used gas by all transactions in this block
-timestamp: The timestamp for when the block was collated
-transaction_count: The number of transactions in the block
+DATASET SCHEMA - TRANSACTIONS
+- block_number: Block number where this transaction was in
+- from_address: Address of the sender
+- to_address: Address of the receiver. null when it is a contract creation transaction
+- value: Value transferred in Wei (the smallest denomination of ether)
+- gas: Gas provided by the sender
+- gas_price : Gas price provided by the sender in Wei
+- block_timestamp: Timestamp the associated block was registered at (effectively timestamp of the transaction)
 
-+-------+--------------------+--------------------+----------------+-----+---------+--------+----------+-----------------+
-| number|                hash|               miner|      difficulty| size|gas_limit|gas_used| timestamp|transaction_count|
-+-------+--------------------+--------------------+----------------+-----+---------+--------+----------+-----------------+
-|4776199|0x9172600443ac88e...|0x5a0b54d5dc17e0a...|1765656009004680| 9773|  7995996| 2042230|1513937536|               62|
-|4776200|0x1fb1d4a2f5d2a61...|0xea674fdde714fd9...|1765656009037448|15532|  8000029| 4385719|1513937547|              101|
-|4776201|0xe633b6dca01d085...|0x829bd824b016326...|1765656009070216|14033|  8000000| 7992282|1513937564|               99|
+DATASET SCHEMA - CONTRACTS
+- address: Address of the contract
+- is_erc20: Whether this contract is an ERC20 contract
+- is_erc721: Whether this contract is an ERC721 contract
+- block_number: Block number where this contract was created
+
+DATASET SCHEMA - SCAMS.JSON
+- id: Unique ID for the reported scam
+- name: Name of the Scam
+- url: Hosting URL
+- coin: Currency the scam is attempting to gain 
+- category: Category of scam - Phishing, Ransomware, Trust Trade, etc.
+- subcategory: Subdivisions of Category
+- description: Description of the scam provided by the reporter and datasource
+- addresses: List of known addresses associated with the scam
+- reporter: User/company who reported the scam first
+- ip: IP address of the reporter
+- status: If the scam is currently active, inactive or has been taken offline
