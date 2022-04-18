@@ -2,7 +2,7 @@ The tabulated results show the top ten addresses mined the most blocks.
 
 | Most active miner addresses                | Size of block    |
 | -------------------------------------------|:----------------:|
-| 0xea674fdde714fd979de3edf0f56aa9716b89ec8  | 23980401188      |
+| 0xea674fdde714fd979de3edf0f56aa9716b898ec8 | 23980401188      |
 | 0x829bd824b016326a401d083b33d092293333a830 | 15010222714      |
 | 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c | 13978859941      |
 | 0x52bc44d5378309ee2abf1539bf71de1b7d7be3b5 | 10998145387      |
