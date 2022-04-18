@@ -1,3 +1,4 @@
+# Results
 The tabulated results show the top ten addresses mined the most blocks.
 
 | Most active miner addresses                | Size of block    |
