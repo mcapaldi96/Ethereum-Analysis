@@ -42,3 +42,13 @@ DATASET SCHEMA - SCAMS.JSON
 - reporter: User/company who reported the scam first
 - ip: IP address of the reporter
 - status: If the scam is currently active, inactive or has been taken offline
+
+
+## Assignment Criteria
+- Part A: produce bar charts illustrating the number of transactions and the average transation value.
+- Part B: Identify the top ten addresses who recieved the most Ether for their smart contract services.
+- Part C: Determine the top ten active miners, sorted by block size.
+- Part D:
+  - Scam analysis: Identifying the most popular and lucrative scams.
+  - Fork the chain: Considering how gas fee price changes around a forking event.
+  - Gas Guzzlers: Investigating how gas prices evolved overtime, and whether contract complexity has a dependency on gas price.
